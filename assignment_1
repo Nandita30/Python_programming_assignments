@@ -1,0 +1,28 @@
+Question 1. Write a Python program to print (Hello Python)?
+l= ["Hello Python"]
+for i in l:
+print(i)
+Question 2. Write a Python program to do arithmetical operations addition and division?
+a=34
+b=44
+c=a+b
+d=a/b
+print('The sum of {0} and {1} is {2}'.format(a,b,c))
+print('The division of {0} and {1} is {2}'.format(a,b,d))
+Question 3. Write a Python program to find the area of a triangle?
+b=int(input("Enter the breath of the triangle to calculate it's area: "))
+h=int(input("Enter the height of the triangle to calculate it's area: "))
+print(1/2*b*h)
+Question 4. Write a Python program to swap two variables?
+num1=10
+num2=20
+print("Value of num1 before swapping: ", num1)
+print("Value of num2 before swapping: ", num2)
+t=num1
+num1=num2
+num2=t
+print("Value of num1 after swapping: ", num1)
+print("Value of num2 after swapping: ", num2)
+Question 5. Write a Python program to generate a random number?
+import random
+print(random.randint(0,12))
