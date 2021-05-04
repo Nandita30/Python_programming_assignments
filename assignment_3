@@ -1,0 +1,45 @@
+Question 1. Write a Python Program to check if a Number is Positive, Negative or Zero?
+a=int(input("Enter the number you want to wish"))
+if a==0:
+    print("The user entered 0")
+elif a>0:
+    print("The user entered POSITIVE number")
+elif a<0:
+    print("The user entered NEGATIVE number")
+else:
+    print("The user entered INVALID number")
+Question 2. Write a Python Program to check if a Number is odd or Even?
+a=int(input("Enter the number: "))
+if a%2==0:
+    print("The number is Even")
+else:
+    print("The number is Odd")
+Question 3. Write a Python Program to check Leap Year?
+yr = int(input("Enter valid year"))
+if (yr % 4) == 0:
+   if (yr % 100) == 0:
+       if (yr % 400) == 0:
+           print("{0} is a leap year".format(yr))
+       else:
+           print("{0} is not a leap year".format(yr))
+   else:
+       print("{0} is a leap year".format(yr))
+else:
+   print("{0} is not a leap year".format(yr))
+Question 4. Write a Python Program to check Prime Number?
+num=int(input("Enter the any number: "))
+for i in range(2,num):
+    if num % i == 0:
+        print(num, "is not a prime number")
+        break
+else:
+    print(num, "is a prime number")
+Question 5. Write a Python Program to print all Prime Numbers in an Interval of 1-10000?
+print("Prime numbers between", 1 , "and", 10000, "are:")
+for num in range(1, 10000):
+      if num > 1:
+       for i in range(2, num):
+           if (num % i) == 0:
+               break
+       else:
+           print(num)
